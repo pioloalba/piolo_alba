@@ -58,6 +58,17 @@
         </div>
         
         <div class="form-actions">
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              class="form-input" 
+              placeholder="Enter password" 
+              required
+            >
+          </div>
           <button type="submit" class="btn btn-primary btn-submit">
             Save Student
           </button>

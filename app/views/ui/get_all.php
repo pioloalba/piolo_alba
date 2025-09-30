@@ -91,6 +91,9 @@
 <body>
 
   <div class="main-container">
+    <form method="post" action="<?= base_url() ?>logout" style="text-align:right; margin-bottom: 1rem;">
+      <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
 
     <div class="student-count">
 

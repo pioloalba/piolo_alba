@@ -8,6 +8,12 @@ defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
  */
 class StudentsModel extends Model
 {
+    public function findByEmail($email)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE email = ? AND {$this->soft_delete_column} IS NULL LIMIT 1";
+        $result = $this->db->raw($sql, [$email]);
+        return $result ? $result->fetch(PDO::FETCH_ASSOC) : false;
+    }
     protected $table = 'lava_lust_test';
     protected $primary_key = 'id';
 

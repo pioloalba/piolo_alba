@@ -6,20 +6,23 @@ class StudentsController extends Controller {
     public function __construct()
     {
         parent::__construct();
-
         $this->call->model('StudentsModel');
         $this->call->library('pagination');
-    
         // Set custom theme and CSS classes
         $this->pagination->set_theme('custom');
         $this->pagination->set_custom_classes([
-        'nav'    => 'pagination-nav',
-        'ul'     => 'pagination-list',
-        'li'     => 'pagination-item',
-        'a'      => 'pagination-link',
-        'active' => 'active'
-    ]);
-
+            'nav'    => 'pagination-nav',
+            'ul'     => 'pagination-list',
+            'li'     => 'pagination-item',
+            'a'      => 'pagination-link',
+            'active' => 'active'
+        ]);
+        // Restrict access to logged-in users only
+        if (!$this->session->has_userdata('user_id')) {
+            $this->session->set_flashdata('error', 'You must log in to access this page.');
+            redirect('login');
+            exit;
+        }
     }
 
     //get_all() → Fetch all students from DB → Pass data to ui/"filename.css" view.
@@ -32,15 +35,16 @@ class StudentsController extends Controller {
     //     }
      function create() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $data = [                                    //$data = [...] → Creates an array containing form input values.                                        
+            $data = [
                 'last_name'  => $_POST['last_name'],
                 'first_name' => $_POST['first_name'],
-                'email'      => $_POST['email']
+                'email'      => $_POST['email'],
+                'password'   => $_POST['password']
             ];
             $this->StudentsModel->insert($data);
             redirect('users');
         }
-        $this->call->view('ui/create');       //Loads a view file located at ui/create
+        $this->call->view('ui/create');
     }
 
 
@@ -52,10 +56,13 @@ class StudentsController extends Controller {
                 'first_name' => $_POST['first_name'],
                 'email'      => $_POST['email']
             ];
+            if (!empty($_POST['password'])) {
+                $data['password'] = $_POST['password'];
+            }
             $this->StudentsModel->update($id, $data);
             redirect('users');
         }
-        $this->call->view('ui/update', ['student' => $student]); //Loads a view file located at ui/update
+        $this->call->view('ui/update', ['student' => $student]);
     }
 
 

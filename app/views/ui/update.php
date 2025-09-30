@@ -58,6 +58,16 @@
         <div class="form-actions">
           <button type="submit" id="update-submit-btn" class="btn-primary">
             <span class="btn-text">Update Student</span>
+          <div class="form-group">
+            <label for="update-password">Password</label>
+            <input 
+              type="password" 
+              id="update-password"
+              name="password" 
+              value=""
+              placeholder="Enter new password (leave blank to keep current)"
+            >
+          </div>
             <span class="btn-loading">Updating...</span>
           </button>
           <a id="back-from-update" class="btn-secondary" href="<?= base_url() ?>users">
