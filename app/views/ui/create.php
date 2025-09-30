@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsive on mobile (scales correctly). -->
   <title>Add Student</title>
-  <?php load_css(['css/style']); ?> <!-- PHP framework functions that load CSS stylesheets (style.css and create.css) for styling. -->
-  <?php load_css(['css/create']); ?>
+  <link rel="stylesheet" href="/public/css/style">
+  <link rel="stylesheet" href="/public/css/create">
 </head>
 
 <body>

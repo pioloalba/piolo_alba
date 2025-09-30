@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Students List</title>
-  <?php load_css(['css/style']); ?>
-  <!-- PHP framework functions that load CSS stylesheets (style.css and create.css) for styling. -->
-  <?php load_css(['css/get_all']); ?>
+  <link rel="stylesheet" href="/public/css/style">
+  <link rel="stylesheet" href="/public/css/get_all">
 </head>
 
 <style>
@@ -97,7 +96,7 @@
 
     <div class="student-count">
 
-      <form method="get" action="/get-all">
+      <form method="get" action="users/get-all">
         <input id="search-user" type="text" name="search" value="<?= $search ?? '' ?>" placeholder="Search...">
         <!-- <button type="submit">Search</button> -->
       </form>

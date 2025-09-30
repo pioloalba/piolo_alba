@@ -42,7 +42,7 @@ class StudentsController extends Controller {
                 'password'   => $_POST['password']
             ];
             $this->StudentsModel->insert($data);
-            redirect('users');
+            redirect('users/get-all');
         }
         $this->call->view('ui/create');
     }
