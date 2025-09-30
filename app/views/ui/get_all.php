@@ -97,7 +97,7 @@
 
     <div class="student-count">
 
-      <form method="get" action="/users/get-all">
+      <form method="get" action="/get-all">
         <input id="search-user" type="text" name="search" value="<?= $search ?? '' ?>" placeholder="Search...">
         <!-- <button type="submit">Search</button> -->
       </form>
