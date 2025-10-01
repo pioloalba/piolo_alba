@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/public/css/auth.css">
     <style>
         body {
-            background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
+            background: linear-gradient(135deg, #f8fafc 0%, #ffe0ec 100%);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -18,21 +18,22 @@
             justify-content: center;
         }
         .landing-container {
-            background: rgba(255,255,255,0.95);
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+            background: rgba(255,255,255,0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
             padding: 2.5rem 2rem 2rem 2rem;
             max-width: 400px;
             width: 100%;
             text-align: center;
+            border: 2px solid #ffe0ec;
         }
         .landing-container h1 {
             margin-bottom: 1.5rem;
             font-size: 2.2rem;
-            color: #222;
+            color: #7c3aed;
         }
         .landing-container p {
-            color: #444;
+            color: #6b7280;
             margin-bottom: 2.2rem;
         }
         .landing-container .btn {
@@ -42,20 +43,22 @@
             font-size: 1.1rem;
             border: none;
             border-radius: 6px;
-            background: #007bff;
+            background: #a5b4fc;
             color: #fff;
             cursor: pointer;
             transition: background 0.2s;
             text-decoration: none;
         }
         .landing-container .btn-secondary {
-            background: #6c757d;
+            background: #fbcfe8;
+            color: #7c3aed;
         }
         .landing-container .btn:hover {
-            background: #0056b3;
+            background: #818cf8;
         }
         .landing-container .btn-secondary:hover {
-            background: #495057;
+            background: #f472b6;
+            color: #fff;
         }
         .error {
             color: #b00020;
@@ -63,6 +66,21 @@
             border-radius: 4px;
             padding: 0.5rem 1rem;
             margin-bottom: 1rem;
+        }
+        #login-form label {
+            color: #7c3aed;
+            font-weight: 500;
+        }
+        #login-form input {
+            border: 1px solid #a5b4fc;
+            border-radius: 6px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        #login-form input:focus {
+            border-color: #7c3aed;
+            outline: none;
         }
     </style>
 </head>

@@ -318,123 +318,54 @@
     margin-right: 1rem;
     vertical-align: middle;
   }
-</style>
 
-<style>
-  /* Custom pagination styling */
-  .pagination-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+  /* Add New Student Button */
+  .btn-add-student {
+    background: #1976d2;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.12);
+    transition: background 0.2s;
+  }
+  .btn-add-student:hover {
+    background: #0d47a1;
   }
 
-  .pagination-list {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .pagination-item {
-    margin: 0;
-  }
-
-  .pagination-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #6b7280;
-    background-color: #ffffff;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-
-  .pagination-link:hover {
-    background-color: #f9fafb;
-    color: #374151;
-    border-color: #9ca3af;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .pagination-item.active .pagination-link {
-    background-color: #3b82f6;
-    color: #ffffff;
-    border-color: #3b82f6;
+  /* Edit Button */
+  .btn-edit {
+    background: #8e24aa;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 6px 16px;
     font-weight: 600;
-    box-shadow: 0 2px 4px 0 rgba(59, 130, 246, 0.3);
+    margin-right: 4px;
+    transition: background 0.2s;
+  }
+  .btn-edit:hover {
+    background: #4a148c;
   }
 
-  .pagination-item.active .pagination-link:hover {
-    background-color: #2563eb;
-    border-color: #2563eb;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px 0 rgba(59, 130, 246, 0.4);
+  /* Delete Button */
+  .btn-delete {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 6px 16px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .btn-delete:hover {
+    background: #b71c1c;
   }
 
-  /* Special styling for First/Last/Prev/Next buttons */
-  .pagination-item:first-child .pagination-link,
-  .pagination-item:last-child .pagination-link {
-    background-color: #f8fafc;
-    border-color: #e2e8f0;
-    color: #64748b;
-    font-weight: 500;
-  }
-
-  .pagination-item:first-child .pagination-link:hover,
-  .pagination-item:last-child .pagination-link:hover {
-    background-color: #f1f5f9;
-    border-color: #cbd5e1;
-    color: #475569;
-  }
-
-  /* Disabled state for navigation buttons */
-  .pagination-item.disabled .pagination-link {
-    background-color: #f8fafc;
-    border-color: #e2e8f0;
-    color: #cbd5e1;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-
-  /* Search Bar Styling */
-  #search-user {
-    width: 260px;
-    padding: 0.6rem 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
-    font-size: 1rem;
-    color: #374151;
-    background-color: #f9fafb;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    outline: none;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-  }
-
-  #search-user:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
-    background-color: #fff;
-  }
-
-  .student-count form {
-    display: inline-block;
-    margin-right: 1rem;
-    vertical-align: middle;
-  }
-</style>
-
-<style>
   /* Modern Dark Theme Student Management System */
   * {
     margin: 0;
@@ -708,8 +639,7 @@
         <input id="search-user" type="text" name="search" value="<?= $search ?? '' ?>" placeholder="Search...">
         <!-- <button type="submit">Search</button> -->
       </form>
-      <a class="btn btn-primary" href="<?= base_url() . 'users/create' ?>">
-        <!-- Button that links to the "create" form (where you add a new student).-->
+      <a class="btn btn-add-student" href="<?= base_url() . 'users/create' ?>">
         <span>Add New Student</span>
       </a>
       <div>
@@ -737,11 +667,11 @@
               <td data-label="Last Name"><?= htmlspecialchars($student['last_name']) ?></td>
               <td data-label="Email"><?= htmlspecialchars($student['email']) ?></td>
               <td data-label="Actions" class="table-actions">
-                <a href="<?= base_url() . 'users/update/' . $student['id'] ?>" class="btn btn-secondary btn-small"
+                <a href="<?= base_url() . 'users/update/' . $student['id'] ?>" class="btn btn-edit btn-small"
                   aria-label="Edit <?= htmlspecialchars($student['first_name'] . ' ' . $student['last_name']) ?>">
                   Edit
                 </a>
-                <button type="button" class="btn btn-danger btn-small"
+                <button type="button" class="btn btn-delete btn-small"
                   onclick="confirmDelete('<?= $student['id'] ?>', '<?= htmlspecialchars($student['first_name'] . ' ' . $student['last_name']) ?>')"
                   aria-label="Delete <?= htmlspecialchars($student['first_name'] . ' ' . $student['last_name']) ?>">
                   Delete
