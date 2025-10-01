@@ -79,7 +79,9 @@ $config['ENVIRONMENT']             = 'development';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] 				= '';
+$config['base_url'] = (strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false)
+	? 'http://localhost:3000/'
+	: 'https://' . ($_SERVER['HTTP_HOST'] ?? '') . '/';
 
 /*
 |--------------------------------------------------------------------------
