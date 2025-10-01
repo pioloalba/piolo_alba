@@ -664,7 +664,7 @@
   }
 </style>
 
-<body>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
   <div class="main-container">
     <form method="post" action="<?= base_url() ?>logout" style="text-align:right; margin-bottom: 1rem;">

@@ -422,7 +422,7 @@
   }
 </style>
 
-<body>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
   <div id="update-container" class="container">
     <div id="update-card" class="card">
       <header id="update-header" class="header">

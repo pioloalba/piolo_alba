@@ -191,11 +191,11 @@
     line-height: 1.6;
     min-height: 100vh;
     font-size: 14px;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+
   }
 
   /* Simplified and modernized layout */
@@ -396,7 +396,7 @@
 
 </style>
 
-<body>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="main-container"> <!--  A wrapper for the whole page content. -->
     <div class="form-card"> <!--  A card-like container for the form (styled with CSS).  -->
       <div class="form-header">
@@ -404,8 +404,7 @@
         <p class="form-subtitle">Enter student information below</p>
       </div>
 
-      <form id="student-form" method="POST" class="student-form">
-        action="<?= base_url() ?>index.php/users/create"
+      <form id="student-form" method="POST" class="student-form" action="<?= base_url() ?>index.php/users/create">
         <!--id="student-form" → Unique identifier (useful for JavaScript validation later).
         method="POST" → Sends the form data via POST request (so data isn’t visible in the URL).
         class="student-form" → For CSS styling. -->
