@@ -7,7 +7,7 @@
   <title>Students List</title>
 </head>
 
-<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
+<body style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
 
 <style>
   /* Student Management Page - Specific Styles */
@@ -494,7 +494,7 @@
     line-height: 1.6;
     min-height: 100vh;
     font-size: 14px;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
