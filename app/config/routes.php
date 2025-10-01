@@ -43,7 +43,7 @@ defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 |
 */
 
-$router->get('/', 'Welcome::index');
+$router->get('/', 'AuthController::login');
 
 
 $router->get('/users', 'StudentsController::get_all');

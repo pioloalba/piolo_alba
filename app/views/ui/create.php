@@ -191,11 +191,11 @@
     line-height: 1.6;
     min-height: 100vh;
     font-size: 14px;
-    background-image: url('background.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    
   }
 
   /* Simplified and modernized layout */
@@ -393,7 +393,7 @@
   .student-count {
     animation: fadeIn 0.4s ease-out;
   }
-  
+
 </style>
 
 <body>
