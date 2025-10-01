@@ -18,9 +18,10 @@
       </div>
       
       <form id="student-form" method="POST" class="student-form">  
-          <!--id="student-form" → Unique identifier (useful for JavaScript validation later).
-              method="POST" → Sends the form data via POST request (so data isn’t visible in the URL).
-              class="student-form" → For CSS styling. -->
+      action="/users/create"
+      <!--id="student-form" → Unique identifier (useful for JavaScript validation later).
+        method="POST" → Sends the form data via POST request (so data isn’t visible in the URL).
+        class="student-form" → For CSS styling. -->
         <div class="form-group">
           <label for="first_name" class="form-label">First Name</label>
           <input 
