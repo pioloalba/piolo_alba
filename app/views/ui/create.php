@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- for responsive on mobile (scales correctly). -->
   <title>Add Student</title>
-  <link rel="stylesheet" href="<?= base_url() . 'public/css/style.css' ?>">
-  <link rel="stylesheet" href="<?= base_url() . 'public/css/create.css' ?>">
+  <link rel="stylesheet" href="<?= base_url() ?>public/css/style.css">
+  <link rel="stylesheet" href="<?= base_url() ?>public/css/create.css">
 </head>
 
 <body>
