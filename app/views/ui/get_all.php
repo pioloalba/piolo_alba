@@ -7,6 +7,8 @@
   <title>Students List</title>
 </head>
 
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
+
 <style>
   /* Student Management Page - Specific Styles */
 
@@ -392,9 +394,47 @@
   .pagination-item:first-child .pagination-link:hover,
   .pagination-item:last-child .pagination-link:hover {
     background-color: #f1f5f9;
-    border-color: #cbd5e
+    border-color: #cbd5e1;
+    color: #475569;
   }
 
+  /* Disabled state for navigation buttons */
+  .pagination-item.disabled .pagination-link {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+    color: #cbd5e1;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Search Bar Styling */
+  #search-user {
+    width: 260px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    color: #374151;
+    background-color: #f9fafb;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  #search-user:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+    background-color: #fff;
+  }
+
+  .student-count form {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+</style>
+
+<style>
   /* Modern Dark Theme Student Management System */
   * {
     margin: 0;
@@ -416,12 +456,6 @@
     --text-disabled: #666666;
 
     /* Accent Colors */
-    --accent-one: #266683;
-    --accent-one-hover: #205973;
-    --accent-two: #68e0ff;
-    --accent-two-hover: #0891b2;
-
-    /* Status Colors */
     --success: #10b981;
     --danger: #ef4444;
     --warning: #f59e0b;
@@ -663,8 +697,6 @@
     animation: fadeIn 0.4s ease-out;
   }
 </style>
-
-<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
   <div class="main-container">
     <form method="post" action="<?= base_url() ?>logout" style="text-align:right; margin-bottom: 1rem;">

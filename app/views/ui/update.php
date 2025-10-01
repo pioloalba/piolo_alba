@@ -7,6 +7,7 @@
   <title>Edit Student</title>
 </head>
 
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
 
 <style>
   /* Update Student Form Specific Styles */
@@ -174,12 +175,6 @@
     --text-disabled: #666666;
 
     /* Accent Colors */
-    --accent-one: #266683;
-    --accent-one-hover: #205973;
-    --accent-two: #68e0ff;
-    --accent-two-hover: #0891b2;
-
-    /* Status Colors */
     --success: #10b981;
     --danger: #ef4444;
     --warning: #f59e0b;
@@ -422,7 +417,7 @@
   }
 </style>
 
-<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<body>
   <div id="update-container" class="container">
     <div id="update-card" class="card">
       <header id="update-header" class="header">

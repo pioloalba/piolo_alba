@@ -8,6 +8,8 @@
   <title>Add Student</title>
 </head>
 
+<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
+
 <style>
   /* Create Student Form Specific Styles */
 
@@ -191,11 +193,6 @@
     line-height: 1.6;
     min-height: 100vh;
     font-size: 14px;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
   }
 
   /* Simplified and modernized layout */
@@ -396,7 +393,6 @@
 
 </style>
 
-<body style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/058/343/large_2x/abstract-technology-pixel-background-design-free-vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="main-container"> <!--  A wrapper for the whole page content. -->
     <div class="form-card"> <!--  A card-like container for the form (styled with CSS).  -->
       <div class="form-header">
