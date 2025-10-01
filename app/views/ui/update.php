@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Student</title>
-  <link rel="stylesheet" href="/public/css/style">
-  <link rel="stylesheet" href="/public/css/update">
+  <link rel="stylesheet" href="<?= base_url() . 'public/css/style.css' ?>">
+  <link rel="stylesheet" href="<?= base_url() . 'public/css/update.css' ?>">
 </head>
 
 <body>

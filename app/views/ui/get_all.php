@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Students List</title>
-  <link rel="stylesheet" href="/public/css/style">
-  <link rel="stylesheet" href="/public/css/get_all">
+  <link rel="stylesheet" href="<?= base_url() . 'public/css/style.css' ?>">
+  <link rel="stylesheet" href="<?= base_url() . 'public/css/get_all.css' ?>">
 </head>
 
 <style>
