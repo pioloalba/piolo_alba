@@ -17,6 +17,8 @@ class StudentsController extends Controller {
             'a'      => 'pagination-link',
             'active' => 'active'
         ]);
+
+        
         // Restrict access to logged-in users only
         if (!$this->session->has_userdata('user_id')) {
             $this->session->set_flashdata('error', 'You must log in to access this page.');

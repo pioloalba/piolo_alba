@@ -393,6 +393,7 @@
   .student-count {
     animation: fadeIn 0.4s ease-out;
   }
+  
 </style>
 
 <body>
