@@ -672,8 +672,7 @@
     </form>
 
     <div class="student-count">
-
-      <form method="get" action="users/get-all">
+  <form method="get" action="<?= base_url() ?>index.php/users/get-all">
         <input id="search-user" type="text" name="search" value="<?= $search ?? '' ?>" placeholder="Search...">
         <!-- <button type="submit">Search</button> -->
       </form>
